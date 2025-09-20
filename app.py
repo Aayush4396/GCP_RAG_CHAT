@@ -219,12 +219,20 @@ with gr.Blocks(title="Gemini RAG Chatbot", theme=gr.themes.Soft()) as demo:
     submit_btn.click(on_submit, [pdf_file, question_box], [answer_box])
     question_box.submit(on_submit, [pdf_file, question_box], [answer_box])
 
+# if __name__ == "__main__":
+#     print("🚀 Starting Gemini RAG Chatbot...")
+#     demo.launch(
+#         server_name="0.0.0.0",          # Required for Cloud Run
+#         server_port=int(os.getenv("PORT", 8080)),  # Cloud Run gives PORT env var
+#         share=False,
+#         inbrowser=False
+#     )
+
 if __name__ == "__main__":
     print("🚀 Starting Gemini RAG Chatbot...")
     demo.launch(
-        server_name="0.0.0.0",          # Required for Cloud Run
-        server_port=int(os.getenv("PORT", 8080)),  # Cloud Run gives PORT env var
+        server_port=8080,  # Or your preferred port
         share=False,
-        inbrowser=False
+        inbrowser=True     # This will open the app in your browser automatically
     )
 
