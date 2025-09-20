@@ -84,3 +84,9 @@ docker run -p 8080:8080 -e GEMINI_API_KEY='your-api-key-here' gcp-rag-chat
 
 <span style="display:none">[^1][^2]</span>
 
+<div style="text-align: center">⁂</div>
+
+[^1]: https://github.com/Aayush4396/GCP_RAG_CHAT
+
+[^2]: https://github.com/Aayush4396/GCP_RAG_CHAT/blob/main/rag_flow.html
+
